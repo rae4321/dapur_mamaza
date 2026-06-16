@@ -107,7 +107,7 @@ export default function Dashboard() {
                 />
                 <div>
                   <span className="text-xs font-semibold px-2 py-0.5 bg-orange-50 text-orange-600 rounded-md">{item.category}</span>
-                  <h3 className="font-bold text-gray-800 text-lg mt-1">{item.name}</h3> // test force commit
+                    <h3 className="font-bold text-gray-800 text-lg mt-1">{item.name}</h3> 
                   <p className="text-xs text-gray-500 line-clamp-2 mt-0.5">{item.description || 'Tidak ada deskripsi.'}</p>
                 </div>
               </div>

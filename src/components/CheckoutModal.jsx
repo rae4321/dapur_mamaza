@@ -129,7 +129,7 @@ export default function CheckoutModal({ cart, totalPrice, onClose, onOrderSucces
               <img
                 src="/QRIS.jpeg"
                 alt="QRIS Dapur Mamaza"
-                className="w-40 h-full mx-auto rounded-lg border bg-white p-2 shadow-xs" // test force commit
+                className="w-40 h-full mx-auto rounded-lg border bg-white p-2 shadow-xs"
               />
               
               <div>
