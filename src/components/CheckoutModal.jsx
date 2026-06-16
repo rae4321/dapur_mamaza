@@ -61,12 +61,13 @@ export default function CheckoutModal({ cart, totalPrice, onClose, onOrderSucces
         }
       }
 
-      // 3. Masukkan item detail ke tabel 'order_items'
+      // 3. Masukkan item detail ke tabel 'order_items' (DENGAN CATATAN/NOTES)
       const orderItemsData = cart.map((item) => ({
         order_id: orderData.id,
         menu_id: item.id,
         quantity: item.quantity,
-        price_at_purchase: item.price
+        price_at_purchase: item.price,
+        notes: item.notes || '' // << BARIS INI YANG DITAMBAHKAN AGAR AMBIL DATA DARI CART INPUT
       }))
 
       const { error: itemsError } = await supabase
